@@ -6,6 +6,8 @@ import android.os.Bundle
 import android.view.View
 import android.widget.EditText
 import android.widget.RadioButton
+import com.example.act_alumno_profesor.actMostrarDatos
+import com.example.act_alumno_profesor.perfilUsuario
 
 class MainActivity : AppCompatActivity() {
 
@@ -26,12 +28,12 @@ class MainActivity : AppCompatActivity() {
         nombre=etNombre.text.toString()
         apellido=etApellido.text.toString()
 
-        var perfilUsuario=perfilUsuario(nombre, apellido, perfil)
+        var perfilUser=perfilUsuario(nombre, apellido, perfil)
         var miIntent=Intent(this,actMostrarDatos::class.java)
-        miIntent.putExtra("perfilUsuario", perfilUsuario.getBundle())
+        miIntent.putExtra("claseUsuario", perfilUser.getBundle())
         startActivity(miIntent)
     }
-    fun setPerfil(view:View): String{
+    fun setPerfil(view:View){
 
         val Profesor=R.id.rbtnProfesor
         val Alumno=R.id.rbtnAlumno
@@ -52,6 +54,5 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-        return perfil
     }
 }
