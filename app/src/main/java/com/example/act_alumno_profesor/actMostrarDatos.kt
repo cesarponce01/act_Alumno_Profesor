@@ -3,6 +3,7 @@ package com.example.act_alumno_profesor
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.TextView
 import com.example.act_alumno_profesor.R
 import com.example.act_alumno_profesor.perfilUsuario
@@ -28,12 +29,10 @@ class actMostrarDatos : AppCompatActivity() {
         txtPerfil.text=perfil.perfil
     }
 
-    fun onVolver(){
+    fun onVolver(view:View){
 
-        var intenMain= Intent(this,MainActivity::class.java)
-
-        startActivity(intenMain)
+        var inten2= Intent(this,MainActivity::class.java)
+        setResult(RESULT_OK,inten2)
         finish()
-
     }
 }

@@ -46,6 +46,7 @@
         app:layout_constraintTop_toBottomOf="@+id/etNombre" />
 
     <RadioGroup
+        android:id="@+id/radioGroup"
         android:layout_width="181dp"
         android:layout_height="105dp"
         android:layout_marginBottom="264dp"
