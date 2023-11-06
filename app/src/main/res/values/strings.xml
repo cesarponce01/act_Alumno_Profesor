@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">act_Alumno_Profesor</string>
+    <string name="titulo">ENTRADA DE DATOS</string>
+    <string name="profesor">Profesor</string>
+    <string name="alumno">Alumno</string>
+    <string name="alta">Alta Usuario</string>
+</resources>
