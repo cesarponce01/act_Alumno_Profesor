@@ -4,4 +4,8 @@
     <string name="profesor">Profesor</string>
     <string name="alumno">Alumno</string>
     <string name="alta">Alta Usuario</string>
+    <string name="perfil">Perfil de Usuario</string>
+    <string name="nomPerfil">Nombre</string>
+    <string name="apePerfil">Apellido</string>
+    <string name="Volver"><![CDATA[" <- Volver"]]></string>
 </resources>
