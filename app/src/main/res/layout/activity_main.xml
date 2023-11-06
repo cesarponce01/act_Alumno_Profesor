@@ -48,10 +48,12 @@
     <RadioGroup
         android:layout_width="181dp"
         android:layout_height="105dp"
+        android:layout_marginBottom="264dp"
         android:orientation="vertical"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="115dp"
-        tools:layout_editor_absoluteY="369dp">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints">
 
         <RadioButton
             android:id="@+id/rbtnProfesor"

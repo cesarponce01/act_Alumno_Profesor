@@ -5,26 +5,11 @@ import android.os.Bundle
 class perfilUsuario {
 
     var nombre:String
-        get() {
-            return nombre
-        }
-        set(value) {
-            nombre=value
-        }
+
     var apellido:String
-        get() {
-            return apellido
-        }
-        set(value) {
-            apellido=value
-        }
+
     var perfil:String
-        get() {
-            return perfil
-        }
-        set(value) {
-            perfil=value
-        }
+
 
     constructor(nombre: String, apellido: String, perfil: String) {
         this.nombre = nombre

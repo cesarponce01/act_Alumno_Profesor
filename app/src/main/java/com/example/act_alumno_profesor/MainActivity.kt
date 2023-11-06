@@ -16,13 +16,17 @@ class MainActivity : AppCompatActivity() {
     lateinit var nombre:String
     lateinit var apellido:String
     lateinit var perfil:String
+    lateinit var Profesor:RadioButton
+    lateinit var Alumno:RadioButton
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
         etNombre=findViewById(R.id.etNombre)
         etApellido=findViewById(R.id.etApellido)
+
     }
+
 
     fun onAlta(view:View){
         nombre=etNombre.text.toString()
@@ -35,20 +39,20 @@ class MainActivity : AppCompatActivity() {
     }
     fun setPerfil(view:View){
 
-        val Profesor=R.id.rbtnProfesor
-        val Alumno=R.id.rbtnAlumno
+        Profesor=findViewById(R.id.rbtnProfesor)
+        Alumno=findViewById(R.id.rbtnAlumno)
 
         if (view is RadioButton){
             val seleccion=view.isChecked
 
             when (view.getId()){
-                Profesor->
+                R.id.rbtnProfesor->
                     if (seleccion){
-                        perfil=Profesor.toString()
+                        perfil=Profesor.text.toString()
                     }
-                Alumno ->{
+                R.id.rbtnAlumno ->{
                     if (seleccion){
-                        perfil=Alumno.toString()
+                        perfil=Alumno.text.toString()
                     }
                 }
             }

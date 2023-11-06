@@ -1,5 +1,6 @@
 package com.example.act_alumno_profesor
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
@@ -20,10 +21,19 @@ class actMostrarDatos : AppCompatActivity() {
         txtApellido=findViewById(R.id.txtApellido)
         txtPerfil=findViewById(R.id.txtPerfil)
 
-        var bundlePerfil=intent.getBundleExtra("perfilUsuario")
-        var perfil=perfilUsuario(bundlePerfil!!)
+        var bundleUsuario=intent.getBundleExtra("claseUsuario")
+        var perfil=perfilUsuario(bundleUsuario!!)
         txtNombre.text =perfil.nombre
         txtApellido.text=perfil.apellido
         txtPerfil.text=perfil.perfil
+    }
+
+    fun onVolver(){
+
+        var intenMain= Intent(this,MainActivity::class.java)
+
+        startActivity(intenMain)
+        finish()
+
     }
 }
