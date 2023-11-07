@@ -7,17 +7,17 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="241dp"
-        android:layout_height="24dp"
+        android:layout_width="242dp"
+        android:layout_height="39dp"
         android:fontFamily="@font/archivo_narrow_bold"
         android:text="@string/titulo"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.552"
+        app:layout_constraintHorizontal_bias="0.582"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.103" />
+        app:layout_constraintVertical_bias="0.087" />
 
     <EditText
         android:id="@+id/etNombre"
